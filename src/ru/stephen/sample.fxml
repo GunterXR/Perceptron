@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="279.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.stephen.Controller">
+   <children>
+      <ImageView fx:id="image" fitHeight="256.0" fitWidth="256.0" layoutX="11.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" smooth="false" />
+      <Button fx:id="button_import" layoutX="11.0" layoutY="13.0" mnemonicParsing="false" onAction="#onClickImport" text="Импорт" />
+      <Button fx:id="button_recognize" disable="true" layoutX="189.0" layoutY="13.0" minHeight="25.6" minWidth="78.4" mnemonicParsing="false" onAction="#onClickRecognize" text="Распознать" />
+      <CheckBox fx:id="checkbox_learn" layoutX="89.0" layoutY="16.0" mnemonicParsing="false" onAction="#onClickCheck" text="Обучение?" />
+      <Separator fx:id="separator_north" layoutY="50.0" prefHeight="3.0" prefWidth="278.0" />
+      <Separator fx:id="separator_south" layoutX="-7.0" layoutY="328.0" prefHeight="3.0" prefWidth="284.0" />
+      <Label fx:id="label_result" layoutX="10.0" layoutY="338.0" text="Результат:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="label_figure" layoutX="93.0" layoutY="338.0" textFill="#ea1515">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
